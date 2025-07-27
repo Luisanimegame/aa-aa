@@ -3073,13 +3073,13 @@ class PlayState extends MusicBeatState
 			camHUD.zoom += 0.03;
 		}
 		
-		if (curSong.toLowerCase() == 'smas' && curBeat >= 64 && curBeat < 576 && camZooming && FlxG.camera.zoom < 1.35)
+		if (curSong.toLowerCase() == 'smas' && curBeat >= 16 && curBeat < 144 && camZooming && FlxG.camera.zoom < 1.35)
 		{
 			FlxG.camera.zoom += 0.015;
 			camHUD.zoom += 0.03;
 		}
 		
-		if (curSong.toLowerCase() == 'smas' && curBeat >= 1088 && curBeat < 1600 && camZooming && FlxG.camera.zoom < 1.35)
+		if (curSong.toLowerCase() == 'smas' && curBeat >= 272 && curBeat < 400 && camZooming && FlxG.camera.zoom < 1.35)
 		{
 			FlxG.camera.zoom += 0.015;
 			camHUD.zoom += 0.03;
