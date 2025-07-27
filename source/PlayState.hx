@@ -2569,354 +2569,122 @@ class PlayState extends MusicBeatState
 			luaModchart.executeState('stepHit',[curStep]);
 		}
 		#end
-		
-		switch(curStep)
-		{
-		case 'rock':
-		{
-		// usa switch, pelo amor- ~ Idklool
-		// assim?
-		if (curStep == 128)
-		{
-			defaultCamZoom = 0.65;
-		}
-		if (curStep == 160)
-		{
-			defaultCamZoom = 0.70;
-		}
-		if (curStep == 192)
-		{
-			defaultCamZoom = 0.75;
-		}
-		if (curStep == 224)
-		{
-			defaultCamZoom = 0.80;
-		}
-		if (curStep == 256)
-		{
-			defaultCamZoom = 0.47;
-			stageJson.camBF = [-320, -200];
-			stageJson.camDad = [200, 0];
-		}
-		if (curStep == 320)
-		{
-			defaultCamZoom = 0.62;
-		}
-		if (curStep == 370)
-		{
-			defaultCamZoom = 0.68;
-		}
-		if (curStep == 384)
-		{
-			defaultCamZoom = 0.47;
-		}
-		if (curStep == 448)
-		{
-			defaultCamZoom = 0.62;
-		}
-		if (curStep == 480)
-		{
-			defaultCamZoom = 0.68;
-		}
-		if (curStep == 512)
-		{
-			defaultCamZoom = 0.60;
-			stageJson.camBF = [-320, -70];
-			stageJson.camDad = [100, 210];
-		}
-		if (curStep == 640)
-		{
-			defaultCamZoom = 0.55;
-		}
-		if (curStep == 768)
-		{
-			defaultCamZoom = 0.75;
-		}
-		if (curStep == 896)
-		{
-			defaultCamZoom = 0.80;
-		}
-		if (curStep == 1024)
-		{
-			defaultCamZoom = 0.47;
-			stageJson.camBF = [-320, -200];
-			stageJson.camDad = [200, 0];
-		}
-		if (curStep == 1048)
-		{
-			defaultCamZoom = 0.62;
-		}
-		if (curStep == 1056)
-		{
-			defaultCamZoom = 0.47;
-		}
-		if (curStep == 1136)
-		{
-			defaultCamZoom = 0.62;
-		}
-		if (curStep == 1140)
-		{
-			defaultCamZoom = 0.64;
-		}
-		if (curStep == 1144)
-		{
-			defaultCamZoom = 0.66;
-		}
-		if (curStep == 1148)
-		{
-			defaultCamZoom = 0.62;
-		}
-		if (curStep == 1152)
-		{
-			defaultCamZoom = 0.85;
-			stageJson.camBF = [-320, -70];
-			stageJson.camDad = [100, 210];
-		}
-		if (curStep == 1176)
-		{
-			defaultCamZoom = 0.60;
-		}
-		if (curStep == 1184)
-		{
-			defaultCamZoom = 0.75;
-		}
-		if (curStep == 1208)
-		{
-			defaultCamZoom = 0.60;
-		}
-		if (curStep == 1216)
-		{
-			defaultCamZoom = 0.85;
-		}
-		if (curStep == 1240)
-		{
-			defaultCamZoom = 0.60;
-		}
-		if (curStep == 1248)
-		{
-			defaultCamZoom = 0.95;
-		}
-		if (curStep == 1264)
-		{
-			defaultCamZoom = 0.75;
-		}
-		if (curStep == 1280)
-		{
-			defaultCamZoom = 0.60;
-		}
-		if (curStep == 1408)
-		{
-			defaultCamZoom = 0.65;
-		}
-		if (curStep == 1440)
-		{
-			defaultCamZoom = 0.70;
-		}
-		if (curStep == 1472)
-		{
-			defaultCamZoom = 0.75;
-		}
-		if (curStep == 1504)
-		{
-			defaultCamZoom = 0.80;
-		}
-		if (curStep == 1536)
-		{
-			defaultCamZoom = 0.60;
-		}
-		}
-		case 'angru':
-		{
-		if (curStep == 128)
-		{
-			defaultCamZoom = 0.90;
-		}
-		if (curStep == 256)
-		{
-			defaultCamZoom = 0.56;
-		}
-		if (curStep == 272)
-		{
-			defaultCamZoom = 0.60;
-		}
-		if (curStep == 288)
-		{
-			defaultCamZoom = 0.76;
-		}
-		if (curStep == 304)
-		{
-			defaultCamZoom = 0.80;
-		}
-		if (curStep == 320)
-		{
-			defaultCamZoom = 0.56;
-		}
-		if (curStep == 336)
-		{
-			defaultCamZoom = 0.60;
-		}
-		if (curStep == 352)
-		{
-			defaultCamZoom = 0.76;
-		}
-		if (curStep == 364)
-		{
-			defaultCamZoom = 0.80;
-		}
-		if (curStep == 368)
-		{
-			defaultCamZoom = 0.90;
-		}
-		if (curStep == 384)
-		{
-			defaultCamZoom = 0.72;
-		}
-		if (curStep == 508)
-		{
-			defaultCamZoom = 0.87;
-		}
-		if (curStep == 510)
-		{
-			defaultCamZoom = 0.97;
-		}
-		if (curStep == 512)
-		{
-			defaultCamZoom = 0.60;
-		}
-		if (curStep == 640)
-		{
-			defaultCamZoom = 0.55;
-		}
-		if (curStep == 672)
-		{
-			defaultCamZoom = 0.77;
-		}
-		if (curStep == 704)
-		{
-			defaultCamZoom = 0.55;
-		}
-		if (curStep == 736)
-		{
-			defaultCamZoom = 0.77;
-		}
-		if (curStep == 768)
-		{
-			defaultCamZoom = 0.56;
-		}
-		if (curStep == 784)
-		{
-			defaultCamZoom = 0.60;
-		}
-		if (curStep == 800)
-		{
-			defaultCamZoom = 0.76;
-		}
-		if (curStep == 816)
-		{
-			defaultCamZoom = 0.80;
-		}
-		if (curStep == 832)
-		{
-			defaultCamZoom = 0.56;
-		}
-		if (curStep == 848)
-		{
-			defaultCamZoom = 0.60;
-		}
-		if (curStep == 864)
-		{
-			defaultCamZoom = 0.76;
-		}
-		if (curStep == 876)
-		{
-			defaultCamZoom = 0.80;
-		}
-		if (curStep == 880)
-		{
-			defaultCamZoom = 0.90;
-		}
-		if (curStep == 896)
-		{
-			defaultCamZoom = 0.70;
-		}
-		if (curStep == 1024)
-		{
-			defaultCamZoom = 0.55;
-		}
-		}
-		case 'smas':
-		{
-		if (curStep == 64)
-		{
-			defaultCamZoom = 0.55;
-		}
-		if (curStep == 320)
-		{
-			defaultCamZoom = 0.65;
-		}
-		if (curStep == 440)
-		{
-			// Jumpscare HERE
-		}
-		if (curStep == 576)
-		{
-			defaultCamZoom = 0.85;
-		}
-		if (curStep == 832)
-		{
-			defaultCamZoom = 0.95;
-		}
-		if (curStep == 1087)
-		{
-			defaultCamZoom = 0.65;
-		}
-		if (curStep == 1208)
-		{
-			// Jumpscare HERE
-			// Nuh uh ~ Idklool
-		}
-		if (curStep == 1344)
-		{
-			defaultCamZoom = 0.55;
-		}
-		if (curStep == 1376)
-		{
-			defaultCamZoom = 0.65;
-		}
-		if (curStep == 1408)
-		{
-			defaultCamZoom = 0.75;
-		}
-		if (curStep == 1440)
-		{
-			defaultCamZoom = 0.85;
-		}
-		if (curStep == 1472)
-		{
-			defaultCamZoom = 0.55;
-		}
-		if (curStep == 1504)
-		{
-			defaultCamZoom = 0.65;
-		}
-		if (curStep == 1536)
-		{
-			defaultCamZoom = 0.75;
-		}
-		if (curStep == 1568)
-		{
-			defaultCamZoom = 0.85;
-		}
-		if (curStep == 1600)
-		{
-			defaultCamZoom = 0.55;
-		}
-		if (curStep == 1856)
-		{
-			defaultCamZoom = 0.60;
-		}
-		}
-		}
+		switch (songName) {
+			case 'rock':
+				switch (curStep) {
+					case 128: defaultCamZoom = 0.65;
+					case 160: defaultCamZoom = 0.70;
+					case 192: defaultCamZoom = 0.75;
+					case 224: defaultCamZoom = 0.80;
+					case 256:
+						defaultCamZoom = 0.47;
+						stageJson.camBF = [-320, -200];
+						stageJson.camDad = [200, 0];
+					case 320: defaultCamZoom = 0.62;
+					case 370: defaultCamZoom = 0.68;
+					case 384: defaultCamZoom = 0.47;
+					case 448: defaultCamZoom = 0.62;
+					case 480: defaultCamZoom = 0.68;
+					case 512:
+						defaultCamZoom = 0.60;
+						stageJson.camBF = [-320, -70];
+						stageJson.camDad = [100, 210];
+					case 640: defaultCamZoom = 0.55;
+					case 768: defaultCamZoom = 0.75;
+					case 896: defaultCamZoom = 0.80;
+					case 1024:
+						defaultCamZoom = 0.47;
+						stageJson.camBF = [-320, -200];
+						stageJson.camDad = [200, 0];
+					case 1048: defaultCamZoom = 0.62;
+					case 1056: defaultCamZoom = 0.47;
+					case 1136: defaultCamZoom = 0.62;
+					case 1140: defaultCamZoom = 0.64;
+					case 1144: defaultCamZoom = 0.66;
+					case 1148: defaultCamZoom = 0.62;
+					case 1152:
+						defaultCamZoom = 0.85;
+						stageJson.camBF = [-320, -70];
+						stageJson.camDad = [100, 210];
+					case 1176: defaultCamZoom = 0.60;
+					case 1184: defaultCamZoom = 0.75;
+					case 1208: defaultCamZoom = 0.60;
+					case 1216: defaultCamZoom = 0.85;
+					case 1240: defaultCamZoom = 0.60;
+					case 1248: defaultCamZoom = 0.95;
+					case 1264: defaultCamZoom = 0.75;
+					case 1280: defaultCamZoom = 0.60;
+					case 1408: defaultCamZoom = 0.65;
+					case 1440: defaultCamZoom = 0.70;
+					case 1472: defaultCamZoom = 0.75;
+					case 1504: defaultCamZoom = 0.80;
+					case 1536: defaultCamZoom = 0.60;
+					default:
+				}
+
+			case 'angru':
+				switch (curStep) {
+					case 128: defaultCamZoom = 0.90;
+					case 256: defaultCamZoom = 0.56;
+					case 272: defaultCamZoom = 0.60;
+					case 288: defaultCamZoom = 0.76;
+					case 304: defaultCamZoom = 0.80;
+					case 320: defaultCamZoom = 0.56;
+					case 336: defaultCamZoom = 0.60;
+					case 352: defaultCamZoom = 0.76;
+					case 364: defaultCamZoom = 0.80;
+					case 368: defaultCamZoom = 0.90;
+					case 384: defaultCamZoom = 0.72;
+					case 508: defaultCamZoom = 0.87;
+					case 510: defaultCamZoom = 0.97;
+					case 512: defaultCamZoom = 0.60;
+					case 640: defaultCamZoom = 0.55;
+					case 672: defaultCamZoom = 0.77;
+					case 704: defaultCamZoom = 0.55;
+					case 736: defaultCamZoom = 0.77;
+					case 768: defaultCamZoom = 0.56;
+					case 784: defaultCamZoom = 0.60;
+					case 800: defaultCamZoom = 0.76;
+					case 816: defaultCamZoom = 0.80;
+					case 832: defaultCamZoom = 0.56;
+					case 848: defaultCamZoom = 0.60;
+					case 864: defaultCamZoom = 0.76;
+					case 876: defaultCamZoom = 0.80;
+					case 880: defaultCamZoom = 0.90;
+					case 896: defaultCamZoom = 0.70;
+					case 1024: defaultCamZoom = 0.55;
+					default:
+				}
+
+			case 'smas':
+				switch (curStep) {
+					case 64: defaultCamZoom = 0.55;
+					case 320: defaultCamZoom = 0.65;
+					case 440:
+						// Jumpscare HERE
+						// Boo
+					case 576: defaultCamZoom = 0.85;
+					case 832: defaultCamZoom = 0.95;
+					case 1087: defaultCamZoom = 0.65;
+					case 1208:
+						// Jumpscare HERE
+						// Nuh uh ~ Idklool
+					case 1344: defaultCamZoom = 0.55;
+					case 1376: defaultCamZoom = 0.65;
+					case 1408: defaultCamZoom = 0.75;
+					case 1440: defaultCamZoom = 0.85;
+					case 1472: defaultCamZoom = 0.55;
+					case 1504: defaultCamZoom = 0.65;
+					case 1536: defaultCamZoom = 0.75;
+					case 1568: defaultCamZoom = 0.85;
+					case 1600: defaultCamZoom = 0.55;
+					case 1856: defaultCamZoom = 0.60;
+					default:
+				}
+
+			default:
+		}
+	
 
 		for (stage in stagesArray)
 		    stage.stepHit(curStep);
