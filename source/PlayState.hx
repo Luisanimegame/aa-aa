@@ -2569,7 +2569,7 @@ class PlayState extends MusicBeatState
 			luaModchart.executeState('stepHit',[curStep]);
 		}
 		#end
-		switch (songName) {
+		switch (curSong.toLowerCase()) {
 			case 'rock':
 				switch (curStep) {
 					case 128: defaultCamZoom = 0.65;
