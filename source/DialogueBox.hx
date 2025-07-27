@@ -40,15 +40,6 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (PlayState.SONG.song.toLowerCase())
 		{
-			case 'rock':
-				FlxG.sound.playMusic(Paths.music('Lunchbox'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
-			case 'angru':
-				FlxG.sound.playMusic(Paths.music('Lunchbox'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
-			case 'smas':
-				FlxG.sound.playMusic(Paths.music('Lunchbox'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
 			case 'senpai':
 				FlxG.sound.playMusic(Paths.music('Lunchbox'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
@@ -74,21 +65,6 @@ class DialogueBox extends FlxSpriteGroup
 		var hasDialog = false;
 		switch (PlayState.SONG.song.toLowerCase())
 		{
-			case 'rock':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-			case 'angru':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-			case 'smas':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
 			case 'senpai':
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
@@ -212,7 +188,7 @@ class DialogueBox extends FlxSpriteGroup
 				{
 					isEnding = true;
 
-					if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns' || PlayState.SONG.song.toLowerCase() == 'rock' || PlayState.SONG.song.toLowerCase() == 'angru' || PlayState.SONG.song.toLowerCase() == 'smas')
+					if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns')
 						FlxG.sound.music.fadeOut(2.2, 0);
 
 					new FlxTimer().start(0.2, function(tmr:FlxTimer)

@@ -329,12 +329,6 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
-			case 'rock':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('rock/rockDialogue'));
-			case 'angru':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('angru/angruDialogue'));
-			case 'smas':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('smas/smasDialogue'));
 		}
 		curStage = SONG.stage;
 		if (curStage == null || curStage.length < 1) {
@@ -598,12 +592,6 @@ class PlayState extends MusicBeatState
 							});
 						});
 					});
-				case 'rock':
-					schoolIntro(doof);
-				case 'angru':
-					schoolIntro(doof);
-				case 'smas':
-					schoolIntro(doof);
 				case 'senpai':
 					schoolIntro(doof);
 				case 'roses':
