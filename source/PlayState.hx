@@ -1776,7 +1776,7 @@ class PlayState extends MusicBeatState
 							cpuStrums.forEach((spr:StaticArrows) ->
 							{
 								if (daNote.noteData == spr.ID)
-								  if (SONG.song.toLowerCase() != 'rock' && SONG.song.toLowerCase() != 'angru' && SONG.song.toLowerCase() != 'smas')
+								  if (dad.curCharacter != 'roco')
 									spr.playAnim('confirm', true);
 							});
 						}
@@ -1791,7 +1791,7 @@ class PlayState extends MusicBeatState
 						for (stage in stagesArray)
 						    stage.opponentNoteHit(daNote);
 	
-						if (SONG.song.toLowerCase() != 'rock' && SONG.song.toLowerCase() != 'angru' && SONG.song.toLowerCase() != 'smas') notes.remove(daNote, true);
+						if (dad.curCharacter != 'roco') notes.remove(daNote, true);
 						//daNote.destroy();
 						callOnScripts('opponentNoteHit', [notes.members.indexOf(daNote), daNote.noteData, daNote.isSustainNote, daNote.noteType]);
 					}
@@ -2570,9 +2570,11 @@ class PlayState extends MusicBeatState
 		}
 		#end
 		
-		if (curSong.toLowerCase() == 'rock') //oh my god
+		switch(curStep)
 		{
-		  // usa switch, pelo amor- ~ Idklool
+		case 'rock':
+		// usa switch, pelo amor- ~ Idklool
+		// assim?
 		if (curStep == 128)
 		{
 			defaultCamZoom = 0.65;
@@ -2721,10 +2723,7 @@ class PlayState extends MusicBeatState
 		{
 			defaultCamZoom = 0.60;
 		}
-		}
-						
-		if (curSong.toLowerCase() == 'angru') //he is very angry
-		{
+		case 'angru':
 		if (curStep == 128)
 		{
 			defaultCamZoom = 0.90;
@@ -2841,10 +2840,7 @@ class PlayState extends MusicBeatState
 		{
 			defaultCamZoom = 0.55;
 		}
-		}
-		
-		if (curSong.toLowerCase() == 'smas') //hell
-		{
+		case 'smas':
 		if (curStep == 64)
 		{
 			defaultCamZoom = 0.55;
