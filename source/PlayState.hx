@@ -128,7 +128,7 @@ class PlayState extends MusicBeatState
 	public static var playerStrums:FlxTypedGroup<StaticArrows> = null;
 	public static var cpuStrums:FlxTypedGroup<StaticArrows> = null;
 
-	public var camZooming:Bool = false;
+	public var camZooming:Bool = true;
 	private var curSong:String = "";
 
 	public var health:Float = 1; //making public because sethealth doesnt work without it
@@ -1776,6 +1776,7 @@ class PlayState extends MusicBeatState
 							cpuStrums.forEach((spr:StaticArrows) ->
 							{
 								if (daNote.noteData == spr.ID)
+								  if (SONG.song.toLowerCase() != 'rock' && SONG.song.toLowerCase() != 'angru' && SONG.song.toLowerCase() != 'smas')
 									spr.playAnim('confirm', true);
 							});
 						}
@@ -1786,15 +1787,13 @@ class PlayState extends MusicBeatState
 						#end
 
 						dad.holdTimer = 0;
-						
-						if (SONG.song.toLowerCase() != 'rock' && SONG.song.toLowerCase() != 'angru' && SONG.song.toLowerCase() != 'smas') {
+
 						for (stage in stagesArray)
 						    stage.opponentNoteHit(daNote);
 	
-						notes.remove(daNote, true);
+						if (SONG.song.toLowerCase() != 'rock' && SONG.song.toLowerCase() != 'angru' && SONG.song.toLowerCase() != 'smas') notes.remove(daNote, true);
 						//daNote.destroy();
 						callOnScripts('opponentNoteHit', [notes.members.indexOf(daNote), daNote.noteData, daNote.isSustainNote, daNote.noteType]);
-						}
 					}
 
 					if (daNote.mustPress && !daNote.modifiedByLua)
@@ -2573,6 +2572,7 @@ class PlayState extends MusicBeatState
 		
 		if (curSong.toLowerCase() == 'rock') //oh my god
 		{
+		  // usa switch, pelo amor- ~ Idklool
 		if (curStep == 128)
 		{
 			defaultCamZoom = 0.65;
@@ -2872,6 +2872,7 @@ class PlayState extends MusicBeatState
 		if (curStep == 1208)
 		{
 			// Jumpscare HERE
+			// Nuh uh ~ Idklool
 		}
 		if (curStep == 1344)
 		{
