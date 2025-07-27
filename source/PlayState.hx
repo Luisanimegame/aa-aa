@@ -2573,6 +2573,7 @@ class PlayState extends MusicBeatState
 		switch(curStep)
 		{
 		case 'rock':
+		{
 		// usa switch, pelo amor- ~ Idklool
 		// assim?
 		if (curStep == 128)
@@ -2723,7 +2724,9 @@ class PlayState extends MusicBeatState
 		{
 			defaultCamZoom = 0.60;
 		}
+		}
 		case 'angru':
+		{
 		if (curStep == 128)
 		{
 			defaultCamZoom = 0.90;
@@ -2840,7 +2843,9 @@ class PlayState extends MusicBeatState
 		{
 			defaultCamZoom = 0.55;
 		}
+		}
 		case 'smas':
+		{
 		if (curStep == 64)
 		{
 			defaultCamZoom = 0.55;
@@ -2909,6 +2914,7 @@ class PlayState extends MusicBeatState
 		if (curStep == 1856)
 		{
 			defaultCamZoom = 0.60;
+		}
 		}
 		}
 
