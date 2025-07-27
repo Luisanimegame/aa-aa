@@ -1,0 +1,21 @@
+{
+  "songs": [
+    "ROCK",
+    "Angru",
+    "Smas"
+  ],
+  "characters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "storyName": "Rocky The Rock!",
+  "locked": false,
+  "unlockAfter": "",
+  "hide": false,
+  "difficulties": [
+    "Easy",
+    "Normal",
+    "Hard"
+  ]
+}

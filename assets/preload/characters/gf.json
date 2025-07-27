@@ -1,0 +1,206 @@
+{
+    "frame": "characters/GF_assets",
+    "anims": [
+        {
+            "name": "cheer",
+            "prefix": "GF Cheer",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singLEFT",
+            "prefix": "GF left note",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singDOWN",
+            "prefix": "GF Down Note",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singUP",
+            "prefix": "GF Up Note",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singRIGHT",
+            "prefix": "GF Right Note",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "sad",
+            "prefix": "gf sad",
+            "fps": 24,
+            "loop": false,
+            "indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ]
+        },
+        {
+            "name": "danceLeft",
+            "prefix": "GF Dancing Beat",
+            "fps": 24,
+            "loop": false,
+            "indices": [
+                30,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+            ]
+        },
+        {
+            "name": "danceRight",
+            "prefix": "GF Dancing Beat",
+            "fps": 24,
+            "loop": false,
+            "indices": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29
+            ]
+        },
+        {
+            "name": "hairBlow",
+            "prefix": "GF Dancing Beat Hair blowing",
+            "fps": 24,
+            "loop": true,
+            "indices": [
+                0,
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "name": "hairFall",
+            "prefix": "GF Dancing Beat Hair Landing",
+            "fps": 24,
+            "loop": false,
+            "indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+            ]
+        },
+        {
+            "name": "scared",
+            "prefix": "GF FEAR",
+            "fps": 24,
+            "loop": true
+        }
+    ],
+    "offsets": {
+        "cheer": [
+            3,
+            0
+        ],
+        "singLEFT": [
+            0,
+            -19
+        ],
+        "singDOWN": [
+            0,
+            -20
+        ],
+        "singUP": [
+            0,
+            4
+        ],
+        "singRIGHT": [
+            0,
+            -20
+        ],
+        "sad": [
+            -2,
+            -21
+        ],
+        "danceLeft": [
+            0,
+            -9
+        ],
+        "danceRight": [
+            0,
+            -9
+        ],
+        "hairBlow": [
+            45,
+            -8
+        ],
+        "hairFall": [
+            0,
+            -9
+        ],
+        "scared": [
+            -2,
+            -17
+        ]
+    },
+    "antialiasing": true,
+    "flipX": false,
+    "size": 1,
+    "icon": "gf",
+    "healthColor": [
+        165,
+        0,
+        77
+    ],
+    "pos": [
+        0,
+        0
+    ],
+    "camPos": [
+        0,
+        0
+    ],
+    "singTime": 4,
+    "danceLeftandRight": true
+}

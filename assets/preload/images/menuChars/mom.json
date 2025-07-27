@@ -1,0 +1,11 @@
+{
+  "image": "mom",
+  "scale": 0.5,
+  "position": [
+    50,
+    235
+  ],
+  "flipX": false,
+  "idle": "Mom Idle",
+  "confirm": ""
+}

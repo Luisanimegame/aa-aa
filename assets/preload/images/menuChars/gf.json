@@ -1,0 +1,11 @@
+{
+  "image": "gf",
+  "scale": 0.5,
+  "position": [
+    120,
+    120
+  ],
+  "flipX": false,
+  "idle": "GF Dancing Beat",
+  "confirm": ""
+}

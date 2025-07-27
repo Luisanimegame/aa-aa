@@ -1,0 +1,11 @@
+{
+  "image": "senpai",
+  "scale": 1,
+  "position": [
+    50,
+    -70
+  ],
+  "flipX": false,
+  "idle": "SENPAI idle",
+  "confirm": ""
+}

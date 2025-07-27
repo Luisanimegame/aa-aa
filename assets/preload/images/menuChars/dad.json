@@ -1,0 +1,11 @@
+{
+  "image": "dad",
+  "scale": 0.5,
+  "position": [
+    100,
+    200
+  ],
+  "flipX": false,
+  "idle": "Dad idle dance",
+  "confirm": ""
+}

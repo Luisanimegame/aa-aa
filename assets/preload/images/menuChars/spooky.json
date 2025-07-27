@@ -1,0 +1,11 @@
+{
+  "image": "spooky",
+  "scale": 0.7,
+  "position": [
+    120,
+    100
+  ],
+  "flipX": false,
+  "idle": "spooky dance idle",
+  "confirm": ""
+}

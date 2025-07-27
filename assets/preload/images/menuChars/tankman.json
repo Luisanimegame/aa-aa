@@ -1,0 +1,11 @@
+{
+  "image": "tankman",
+  "scale": 1.3,
+  "position": [
+    0,
+    -40
+  ],
+  "flipX": false,
+  "idle": "Tankman Idle",
+  "confirm": ""
+}

@@ -1,0 +1,11 @@
+{
+  "image": "bf",
+  "scale": 0.9,
+  "position": [
+    30,
+    10
+  ],
+  "flipX": false,
+  "idle": "BF idle dance",
+  "confirm": "BF HEY!!"
+}

@@ -1,0 +1,11 @@
+{
+  "image": "pico",
+  "scale": 0.8,
+  "position": [
+    100,
+    45
+  ],
+  "flipX": true,
+  "idle": "Pico Idle Dance",
+  "confirm": ""
+}

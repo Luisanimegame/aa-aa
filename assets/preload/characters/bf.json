@@ -1,0 +1,206 @@
+{
+    "frame": "characters/BOYFRIEND",
+    "anims": [
+        {
+            "name": "idle",
+            "prefix": "BF idle dance",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singLEFT",
+            "prefix": "BF NOTE LEFT0",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singDOWN",
+            "prefix": "BF NOTE DOWN0",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singUP",
+            "prefix": "BF NOTE UP0",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singRIGHT",
+            "prefix": "BF NOTE RIGHT0",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singLEFTmiss",
+            "prefix": "BF NOTE LEFT MISS",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singDOWNmiss",
+            "prefix": "BF NOTE DOWN MISS",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singUPmiss",
+            "prefix": "BF NOTE UP MISS",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "singRIGHTmiss",
+            "prefix": "BF NOTE RIGHT MISS",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "hey",
+            "prefix": "BF HEY",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "hurt",
+            "prefix": "BF hit",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "scared",
+            "prefix": "BF idle shaking",
+            "fps": 24,
+            "loop": true
+        },
+        {
+            "name": "firstDeath",
+            "prefix": "BF dies",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "deathLoop",
+            "prefix": "BF Dead Loop",
+            "fps": 24,
+            "loop": true
+        },
+        {
+            "name": "deathConfirm",
+            "prefix": "BF Dead confirm",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "dodge",
+            "prefix": "boyfriend dodge",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "attack",
+            "prefix": "boyfriend attack",
+            "fps": 24,
+            "loop": false
+        },
+        {
+            "name": "pre-attack",
+            "prefix": "bf pre attack",
+            "fps": 24,
+            "loop": false
+        }
+    ],
+    "offsets": {
+        "idle": [
+            -5,
+            0
+        ],
+        "singLEFT": [
+            5,
+            -6
+        ],
+        "singDOWN": [
+            -10,
+            -50
+        ],
+        "singUP": [
+            -29,
+            27
+        ],
+        "singRIGHT": [
+            -48,
+            -7
+        ],
+        "singLEFTmiss": [
+            7,
+            19
+        ],
+        "singDOWNmiss": [
+            -15,
+            -19
+        ],
+        "singUPmiss": [
+            -36,
+            27
+        ],
+        "singRIGHTmiss": [
+            -44,
+            22
+        ],
+        "hey": [
+            -3,
+            5
+        ],
+        "hurt": [
+            15,
+            18
+        ],
+        "scared": [
+            -4,
+            0
+        ],
+        "firstDeath": [
+            37,
+            11
+        ],
+        "deathLoop": [
+            37,
+            5
+        ],
+        "deathConfirm": [
+            37,
+            69
+        ],
+        "dodge": [
+            -10,
+            -16
+        ],
+        "attack": [
+            294,
+            267
+        ],
+        "pre-attack": [
+            -40,
+            -40
+        ]
+    },
+    "antialiasing": true,
+    "flipX": true,
+    "size": 1,
+    "icon": "bf",
+    "healthColor": [
+        49,
+        176,
+        209
+    ],
+    "pos": [
+        0,
+        350
+    ],
+    "camPos": [
+        0,
+        0
+    ],
+    "singTime": 4,
+    "danceLeftandRight": false
+}

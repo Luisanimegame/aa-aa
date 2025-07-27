@@ -1,0 +1,11 @@
+{
+  "image": "parents-christmas",
+  "scale": 0.5,
+  "position": [
+    350,
+    200
+  ],
+  "flipX": false,
+  "idle": "Parents Christmas Idle",
+  "confirm": ""
+}

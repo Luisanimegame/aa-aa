@@ -1,0 +1,81 @@
+{
+    "frame": "characters/BUUFRIEDO",
+    "anims": [
+        {
+            "name": "idle",
+            "prefix": "Goofidlee0",
+            "fps": 12,
+            "loop": false,
+            "indices": []
+        },
+        {
+            "name": "singLEFT",
+            "prefix": "LEFT0",
+            "fps": 12,
+            "loop": false,
+            "indices": []
+        },
+        {
+            "name": "singDOWN",
+            "prefix": "DOWN0",
+            "fps": 12,
+            "loop": false,
+            "indices": []
+        },
+        {
+            "name": "singUP",
+            "prefix": "UP0",
+            "fps": 12,
+            "loop": false,
+            "indices": []
+        },
+        {
+            "name": "singRIGHT",
+            "prefix": "BAILARINA CAPUCCINO0",
+            "fps": 12,
+            "loop": false,
+            "indices": []
+        }
+    ],
+    "offsets": {
+        "idle": [
+            0,
+            0
+        ],
+        "singLEFT": [
+            0,
+            0
+        ],
+        "singDOWN": [
+            0,
+            0
+        ],
+        "singUP": [
+            0,
+            0
+        ],
+        "singRIGHT": [
+            0,
+            0
+        ]
+    },
+    "antialiasing": true,
+    "flipX": true,
+    "size": 1.3,
+    "icon": "bf",
+    "healthColor": [
+        255,
+        255,
+        255
+    ],
+    "pos": [
+        0,
+        0
+    ],
+    "camPos": [
+        0,
+        0
+    ],
+    "singTime": 4,
+    "danceLeftandRight": false
+}

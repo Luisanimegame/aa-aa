@@ -1,0 +1,19 @@
+{
+  "songs": [
+    "Tutorial"
+  ],
+  "characters": [
+    "",
+    "bf",
+    "gf"
+  ],
+  "storyName": "",
+  "locked": false,
+  "unlockAfter": "",
+  "hide": false,
+  "difficulties": [
+    "Easy",
+    "Normal",
+    "Hard"
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="parents-christmas.png">
+	<SubTexture name="Parents Christmas Idle0000" x="0" y="0" width="877" height="781" frameX="-4" frameY="-3" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0001" x="0" y="0" width="877" height="781" frameX="-4" frameY="-3" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0002" x="881" y="1567" width="880" height="763" frameX="2" frameY="-21" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0003" x="881" y="1567" width="880" height="763" frameX="2" frameY="-21" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0004" x="0" y="1567" width="881" height="769" frameX="-3" frameY="-15" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0005" x="0" y="1567" width="881" height="769" frameX="-3" frameY="-15" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0006" x="1746" y="0" width="870" height="781" frameX="-16" frameY="-3" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0007" x="1746" y="0" width="870" height="781" frameX="-16" frameY="-3" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0008" x="877" y="0" width="869" height="784" frameX="-17" frameY="0" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0009" x="877" y="0" width="869" height="784" frameX="-17" frameY="0" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0010" x="0" y="781" width="869" height="786" frameX="-17" frameY="2" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0011" x="0" y="781" width="869" height="786" frameX="-17" frameY="2" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0012" x="0" y="781" width="869" height="786" frameX="-17" frameY="2" frameWidth="884" frameHeight="782"/>
+	<SubTexture name="Parents Christmas Idle0013" x="0" y="781" width="869" height="786" frameX="-17" frameY="2" frameWidth="884" frameHeight="782"/>
+</TextureAtlas>

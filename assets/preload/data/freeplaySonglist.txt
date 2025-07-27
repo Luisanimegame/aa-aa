@@ -1,0 +1,4 @@
+Tutorial:gf:1
+ROCK:roco:1
+Angru:roco:1
+Smas:madroco:1

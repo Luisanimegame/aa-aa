@@ -1,0 +1,81 @@
+{
+    "frame": "characters/rockyold_assets",
+    "anims": [
+        {
+            "name": "idle",
+            "prefix": "Idle",
+            "fps": 24,
+            "loop": false,
+            "indices": []
+        },
+        {
+            "name": "singLEFT",
+            "prefix": "Idle",
+            "fps": 24,
+            "loop": false,
+            "indices": []
+        },
+        {
+            "name": "singDOWN",
+            "prefix": "Idle",
+            "fps": 24,
+            "loop": false,
+            "indices": []
+        },
+        {
+            "name": "singUP",
+            "prefix": "Idle",
+            "fps": 24,
+            "loop": false,
+            "indices": []
+        },
+        {
+            "name": "singRIGHT",
+            "prefix": "Idle",
+            "fps": 24,
+            "loop": false,
+            "indices": []
+        }
+    ],
+    "offsets": {
+        "idle": [
+            0,
+            0
+        ],
+        "singLEFT": [
+            0,
+            0
+        ],
+        "singDOWN": [
+            0,
+            0
+        ],
+        "singUP": [
+            0,
+            0
+        ],
+        "singRIGHT": [
+            0,
+            0
+        ]
+    },
+    "antialiasing": true,
+    "flipX": false,
+    "size": 1,
+    "icon": "rock",
+    "healthColor": [
+        186,
+        186,
+        186
+    ],
+    "pos": [
+        0,
+        0
+    ],
+    "camPos": [
+        0,
+        0
+    ],
+    "singTime": 4,
+    "danceLeftandRight": false
+}
