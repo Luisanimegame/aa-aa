@@ -50,20 +50,16 @@
 	
 	<section if="PRELOAD_ALL">
 		<library name="shared"   preload="true" />
-		<library name="week6"    preload="true" />
 		<library name="weekrocky"    preload="true" />
 	</section>
 	
 	<section if="NO_PRELOAD_ALL">
 		<library name="shared"   preload="false" />
-		<library name="week6"    preload="false" />
 		<library name="weekrocky"    preload="false" />
 	</section>
 	
 	<assets path="assets/shared"   library="shared"   exclude="*.ogg" if="web"/>
 	<assets path="assets/shared"   library="shared"   exclude="*.mp3" unless="web"/>
-	<assets path="assets/week6"    library="week6"    exclude="*.ogg" if="web"/>
-	<assets path="assets/week6"    library="week6"    exclude="*.mp3" unless="web"/>
 	<assets path="assets/weekrocky"    library="weekrocky"    exclude="*.ogg" if="web"/>
 	<assets path="assets/weekrocky"    library="weekrocky"    exclude="*.mp3" unless="web"/>
 	
