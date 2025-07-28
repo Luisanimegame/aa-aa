@@ -133,7 +133,7 @@ class HitboxOption extends Option
 	}
 
 	private override function updateDisplay():String
-		return FlxG.save.data.downscroll ? "Invisible" : "Visible";
+		return FlxG.save.data.mobilegameplay ? "Hitbox Invisible" : "Hitbox Visible";
 }
 
 class CamMoveOption extends Option
