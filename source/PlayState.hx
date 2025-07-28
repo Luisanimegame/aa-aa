@@ -1619,18 +1619,13 @@ class PlayState extends MusicBeatState
 			}
 		}
 		
-		if (health <= 0.05)
+		if (curSong == "Smas")
+		{
+		if (health <= 0.10)
 		{
 		drainHealth = false;
 		}
-		
-		if (curSong == 'smas')
-		{
-		if (health <= 1)
-		{
-		drainHealth = true;
-		}
-		if (health >= 1)
+		if (health >= 0.10)
 		{
 		drainHealth = true;
 		}
