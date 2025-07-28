@@ -156,12 +156,12 @@ class DialogueBox extends FlxSpriteGroup
 			// box.flipX = true;
 		}
 
-		dropText = new FlxText(242, 502, Std.int(FlxG.width * 0.6), "", 25);
+		dropText = new FlxText(242, 502, Std.int(FlxG.width * 0.6), "", 35);
 		dropText.font = 'vcr';
 		dropText.color = 0xFFBFC9FF;
 		add(dropText);
 
-		swagDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), "", 25);
+		swagDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), "", 35);
 		swagDialogue.font = 'vcr';
 		swagDialogue.color = 0xFF000000;
 		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];

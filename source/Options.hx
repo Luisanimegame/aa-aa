@@ -133,7 +133,7 @@ class HitboxOption extends Option
 	}
 
 	private override function updateDisplay():String
-		return FlxG.save.data.downscroll ? "Downscroll" : "Upscroll";
+		return FlxG.save.data.downscroll ? "Invisible" : "Visible";
 }
 
 class CamMoveOption extends Option

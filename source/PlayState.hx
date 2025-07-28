@@ -1809,8 +1809,6 @@ class PlayState extends MusicBeatState
 								if (daNote.noteData == spr.ID)
 								  if (dad.curCharacter != 'roco')
 									spr.playAnim('confirm', true);
-									iconP2.scale.set(iconP2.scale.x + 0.05, iconP2.scale.y + 0.05);
-								    iconP2.updateHitbox();
 							});
 						}
 	
@@ -1823,6 +1821,9 @@ class PlayState extends MusicBeatState
 
 						for (stage in stagesArray)
 						    stage.opponentNoteHit(daNote);
+						
+						iconP2.scale.set(iconP2.scale.x + 0.05, iconP2.scale.y + 0.05);
+						iconP2.updateHitbox();
 	
 						if (dad.curCharacter != 'roco') notes.remove(daNote, true);
 						//daNote.destroy();
