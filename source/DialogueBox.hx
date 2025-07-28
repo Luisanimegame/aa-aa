@@ -55,9 +55,9 @@ class DialogueBox extends FlxSpriteGroup
 
 		new FlxTimer().start(0.83, function(tmr:FlxTimer)
 		{
-			bgFade.alpha += (1 / 5) * 0.7;
-			if (bgFade.alpha > 0.7)
-				bgFade.alpha = 0.7;
+			bgFade.alpha += (1 / 5) * 0.3;
+			if (bgFade.alpha > 0.3)
+				bgFade.alpha = 0.3;
 		}, 5);
 
 		box = new FlxSprite(-20, 45);
@@ -65,6 +65,36 @@ class DialogueBox extends FlxSpriteGroup
 		var hasDialog = false;
 		switch (PlayState.SONG.song.toLowerCase())
 		{
+			case 'rock':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('fucky/speech_bubble_talking', 'shared');
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);
+				box.width = 200;
+				box.height = 200;
+				box.x =-120;
+				box.y = 380;
+
+			case 'angru':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('fucky/speech_bubble_talking', 'shared');
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);
+				box.width = 200;
+				box.height = 200;
+				box.x =-120;
+				box.y = 380;
+
+			case 'smas':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('fucky/speech_bubble_talking', 'shared');
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [4], "", 24);
+				box.width = 200;
+				box.height = 200;
+				box.x =-120;
+				box.y = 380;
+		
 			case 'senpai':
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
@@ -93,49 +123,47 @@ class DialogueBox extends FlxSpriteGroup
 		
 		if (!hasDialog)
 			return;
+			
+		box.animation.play('normalOpen');
+		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
+		box.updateHitbox();
 		
-		portraitLeft = new FlxSprite(-20, 40);
-		portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
-		portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-		portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+		portraitLeft = new FlxSprite(0, 0);
+		portraitLeft.frames = Paths.getSparrowAtlas('fucky/none', 'shared');
+		portraitLeft.animation.addByPrefix('enter', 'portrait enter', 24, false);
+		portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.175));
 		portraitLeft.updateHitbox();
 		portraitLeft.scrollFactor.set();
 		add(portraitLeft);
 		portraitLeft.visible = false;
 
-		portraitRight = new FlxSprite(0, 40);
-		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
-		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
+		portraitRight = new FlxSprite(0, 0);
+		portraitRight.frames = Paths.getSparrowAtlas('fucky/none', 'shared');
+		portraitRight.animation.addByPrefix('enter', 'portrait enter', 24, false);
+		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.175));
 		portraitRight.updateHitbox();
 		portraitRight.scrollFactor.set();
 		add(portraitRight);
 		portraitRight.visible = false;
 		
-		box.animation.play('normalOpen');
-		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
-		box.updateHitbox();
 		add(box);
-
+		
 		box.screenCenter(X);
 		portraitLeft.screenCenter(X);
-
-		handSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('weeb/pixelUI/hand_textbox'));
-		add(handSelect);
 
 		if (!talkingRight)
 		{
 			// box.flipX = true;
 		}
 
-		dropText = new FlxText(242, 502, Std.int(FlxG.width * 0.6), "", 32);
-		dropText.font = 'Pixel Arial 11 Bold';
-		dropText.color = 0xFFD89494;
+		dropText = new FlxText(242, 502, Std.int(FlxG.width * 0.6), "", 60);
+		dropText.font = 'vcr';
+		dropText.color = 0xFFBFC9FF;
 		add(dropText);
 
-		swagDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), "", 32);
-		swagDialogue.font = 'Pixel Arial 11 Bold';
-		swagDialogue.color = 0xFF3F2021;
+		swagDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), "", 60);
+		swagDialogue.font = 'vcr';
+		swagDialogue.color = 0xFF000000;
 		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 		add(swagDialogue);
 
@@ -234,17 +262,46 @@ class DialogueBox extends FlxSpriteGroup
 		switch (curCharacter)
 		{
 			case 'dad':
+				portraitLeft.visible = false;
 				portraitRight.visible = false;
-				if (!portraitLeft.visible)
+				if (!portraitRight.visible)
 				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('enter');
+					
+					portraitRight.visible = true;
+					portraitRight.frames = Paths.getSparrowAtlas('fucky/core', 'shared');
+					portraitRight.animation.addByPrefix('enter', 'portrait enter', 24, false);
+					portraitRight.animation.play('enter');
 				}
 			case 'bf':
 				portraitLeft.visible = false;
+				portraitRight.visible = false;
 				if (!portraitRight.visible)
 				{
+					
 					portraitRight.visible = true;
+					portraitRight.frames = Paths.getSparrowAtlas('fucky/pitro', 'shared');
+					portraitRight.animation.addByPrefix('enter', 'portrait enter', 24, false);
+					portraitRight.animation.play('enter');
+				}
+			case 'gf':
+				portraitRight.visible = false;
+				if (!portraitLeft.visible)
+				{
+					
+					portraitLeft.visible = true;
+					portraitLeft.frames = Paths.getSparrowAtlas('fucky/SUPERSONICGAMERBR', 'shared');
+					portraitLeft.animation.addByPrefix('enter', 'portrait enter', 24, false);
+					portraitLeft.animation.play('enter');
+				}
+			case 'none':
+				portraitLeft.visible = false;
+				portraitRight.visible = false;
+				if (!portraitRight.visible)
+				{
+					
+					portraitRight.visible = true;
+					portraitRight.frames = Paths.getSparrowAtlas('fucky/none', 'shared');
+					portraitRight.animation.addByPrefix('enter', 'portrait enter', 24, false);
 					portraitRight.animation.play('enter');
 				}
 		}

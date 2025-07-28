@@ -147,6 +147,8 @@ class PlayState extends MusicBeatState
 	
 	private var generatedMusic:Bool = false;
 	private var startingSong:Bool = false;
+	
+	private var drainHealth:Bool = false;
 
 	public var iconP1:HealthIcon; //making these public again because i may be stupid
 	public var iconP2:HealthIcon; //what could go wrong?
@@ -329,6 +331,12 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
+			case 'rock':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('rock/rockDialogue'));
+			case 'angru':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('angru/angruDialogue'));
+			case 'smas':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('smas/smasDialogue'));
 		}
 		curStage = SONG.stage;
 		if (curStage == null || curStage.length < 1) {
@@ -598,6 +606,12 @@ class PlayState extends MusicBeatState
 					FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 				case 'thorns':
+					schoolIntro(doof);
+				case 'rock':
+					schoolIntro(doof);
+				case 'angru':
+					schoolIntro(doof);
+				case 'smas':
 					schoolIntro(doof);
 				default:
 					if (stopCountdown != null)
@@ -1311,6 +1325,11 @@ class PlayState extends MusicBeatState
 	  callOnScripts('update', [elapsed]);
 		if (FlxG.save.data.botplay && FlxG.keys.justPressed.ONE)
 			camHUD.visible = !camHUD.visible;
+		
+		if (drainHealth) // yoisabo codes hehehe
+		{
+			health -= 0.00240;
+		}
 
 		#if sys
 		if (executeModchart && luaModchart != null && songStarted)
@@ -2658,6 +2677,7 @@ class PlayState extends MusicBeatState
 
 			case 'smas':
 				switch (curStep) {
+					case 63: drainHealth = true;
 					case 64: defaultCamZoom = 0.55;
 					case 320: defaultCamZoom = 0.65;
 					case 440:
