@@ -1809,6 +1809,8 @@ class PlayState extends MusicBeatState
 								if (daNote.noteData == spr.ID)
 								  if (dad.curCharacter != 'roco')
 									spr.playAnim('confirm', true);
+									iconP2.scale.set(iconP2.scale.x + 0.05, iconP2.scale.y + 0.05);
+								    iconP2.updateHitbox();
 							});
 						}
 	
@@ -1824,8 +1826,6 @@ class PlayState extends MusicBeatState
 	
 						if (dad.curCharacter != 'roco') notes.remove(daNote, true);
 						//daNote.destroy();
-						iconP2.scale.set(iconP2.scale.x + 0.1, iconP2.scale.y + 0.1);
-					    iconP2.updateHitbox();
 						callOnScripts('opponentNoteHit', [notes.members.indexOf(daNote), daNote.noteData, daNote.isSustainNote, daNote.noteType]);
 					}
 
@@ -2584,7 +2584,7 @@ class PlayState extends MusicBeatState
 					for (stage in stagesArray)
 					    stage.goodNoteHit(note);
 					
-					iconP1.scale.set(iconP1.scale.x + 0.1, iconP1.scale.y + 0.1);
+					iconP1.scale.set(iconP1.scale.x + 0.05, iconP1.scale.y + 0.05);
 				    iconP1.updateHitbox();
 					callOnScripts('goodNoteHit', [notes.members.indexOf(note), note.noteData, note.isSustainNote, note.noteType]);
 				}
