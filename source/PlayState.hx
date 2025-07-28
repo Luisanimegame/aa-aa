@@ -1618,6 +1618,23 @@ class PlayState extends MusicBeatState
 					gf.dancePerBeat = 1;
 			}
 		}
+		
+		if (health <= 0.05)
+		{
+		drainHealth = false;
+		}
+		
+		if (curSong == 'smas')
+		{
+		if (health <= 1)
+		{
+		drainHealth = true;
+		}
+		if (health >= 1)
+		{
+		drainHealth = true;
+		}
+		}
 
 		if (health <= 0)
 		{
@@ -2677,8 +2694,9 @@ class PlayState extends MusicBeatState
 
 			case 'smas':
 				switch (curStep) {
-					case 63: drainHealth = true;
-					case 64: defaultCamZoom = 0.55;
+					case 64: 
+						defaultCamZoom = 0.55;
+						drainHealth = true;
 					case 320: defaultCamZoom = 0.65;
 					case 440:
 						// Jumpscare HERE
