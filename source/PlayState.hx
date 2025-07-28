@@ -1824,6 +1824,8 @@ class PlayState extends MusicBeatState
 	
 						if (dad.curCharacter != 'roco') notes.remove(daNote, true);
 						//daNote.destroy();
+						iconP2.scale.set(iconP2.scale.x + 0.1, iconP2.scale.y + 0.1);
+					    iconP2.updateHitbox();
 						callOnScripts('opponentNoteHit', [notes.members.indexOf(daNote), daNote.noteData, daNote.isSustainNote, daNote.noteType]);
 					}
 
@@ -2581,6 +2583,9 @@ class PlayState extends MusicBeatState
 					updateAccuracy();
 					for (stage in stagesArray)
 					    stage.goodNoteHit(note);
+					
+					iconP1.scale.set(iconP1.scale.x + 0.1, iconP1.scale.y + 0.1);
+				    iconP1.updateHitbox();
 					callOnScripts('goodNoteHit', [notes.members.indexOf(note), note.noteData, note.isSustainNote, note.noteType]);
 				}
 			}
@@ -2892,15 +2897,6 @@ class PlayState extends MusicBeatState
 		{
 			FlxG.camera.zoom += 0.015;
 			camHUD.zoom += 0.03;
-		}
-
-		if (curBeat % boyfriend.dancePerBeat == 0) {
-		    iconP1.scale.set(iconP1.scale.x + 0.1, iconP1.scale.y + 0.1);
-		    iconP1.updateHitbox();
-		}
-		if (curBeat % dad.dancePerBeat == 0) {
-		    iconP2.scale.set(iconP2.scale.x + 0.1, iconP2.scale.y + 0.1);
-		    iconP2.updateHitbox();
 		}
 
 		/*if (curBeat % 8 == 7 && curSong == 'Bopeebo')
